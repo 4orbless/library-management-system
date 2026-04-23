@@ -129,6 +129,13 @@ Supabase integration is prepared through a scaffolded frontend setup.
 - `js/supabase.js` - reusable Supabase client scaffold
 - `docs/supabase-setup.md` - setup instructions for the team
 
+### Current dashboard data mapping
+The homepage dashboard is prepared to load summary values from the SQL schema used in this project:
+- `books` table -> total books count
+- `members` table -> total members count
+- `loans` table with `status = 'active'` -> active loans count
+- `loans` table with `status = 'overdue'` -> overdue books count
+
 ### Important notes
 - never commit real project credentials to the repository
 - only use the public anon key in frontend code

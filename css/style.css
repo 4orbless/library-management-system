@@ -275,6 +275,27 @@ h2 {
   gap: 1rem;
 }
 
+.dashboard-status {
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.dashboard-status.success {
+  border-color: #15803d;
+}
+
+.dashboard-status.warning {
+  border-color: #b45309;
+}
+
+.dashboard-status.error {
+  border-color: #b91c1c;
+}
+
 .stat-card {
   display: flex;
   flex-direction: column;

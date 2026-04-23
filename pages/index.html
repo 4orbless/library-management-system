@@ -51,32 +51,36 @@
             <p class="section-label">System Summary</p>
             <h2 id="summary-title">Key information at a glance</h2>
           </div>
-          <p class="section-note">These cards will later connect to Supabase and display live system data.</p>
+          <p class="section-note">Dashboard values are loaded from the books, members, and loans tables when Supabase is configured.</p>
+        </div>
+
+        <div class="dashboard-status" id="dashboardStatus" role="status" aria-live="polite">
+          Dashboard is waiting for database connection.
         </div>
 
         <div class="stats-grid">
           <article class="stat-card" aria-label="Total books">
             <h3>Total Books</h3>
-            <p class="stat-value">--</p>
-            <p class="stat-help">Number of books currently stored in the library system.</p>
+            <p class="stat-value" id="totalBooks">--</p>
+            <p class="stat-help">Total number of records stored in the <strong>books</strong> table.</p>
           </article>
 
           <article class="stat-card" aria-label="Total members">
             <h3>Total Members</h3>
-            <p class="stat-value">--</p>
-            <p class="stat-help">Registered members who can borrow books from the library.</p>
+            <p class="stat-value" id="totalMembers">--</p>
+            <p class="stat-help">Total number of registered members in the <strong>members</strong> table.</p>
           </article>
 
           <article class="stat-card" aria-label="Active loans">
             <h3>Active Loans</h3>
-            <p class="stat-value">--</p>
-            <p class="stat-help">Books that are currently issued and not yet returned.</p>
+            <p class="stat-value" id="activeLoans">--</p>
+            <p class="stat-help">Loan records in the <strong>loans</strong> table where status is <strong>active</strong>.</p>
           </article>
 
           <article class="stat-card" aria-label="Overdue books">
             <h3>Overdue Books</h3>
-            <p class="stat-value">--</p>
-            <p class="stat-help">Loans that have passed the due date and need attention.</p>
+            <p class="stat-value" id="overdueBooks">--</p>
+            <p class="stat-help">Loan records in the <strong>loans</strong> table where status is <strong>overdue</strong>.</p>
           </article>
         </div>
       </section>
@@ -136,6 +140,9 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/supabase.js"></script>
   <script src="../js/app.js"></script>
 </body>
 </html>
