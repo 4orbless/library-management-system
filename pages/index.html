@@ -8,18 +8,43 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1>Library Management System</h1>
-      <p>Project skeleton created for dashboard and team integration.</p>
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html">LibraryMS</a>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="loans.html">Loans</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="placeholder-card">
-      <h2>Home / Dashboard</h2>
-      <p>This page will contain the dashboard overview, summary cards, and navigation to the main system areas.</p>
-    </section>
+  <main class="page-main">
+    <div class="container">
+      <section class="hero-section">
+        <p class="section-label">Group Project</p>
+        <h1>Library Management System</h1>
+        <p class="hero-text">A structured web application for managing books, members, and loans using HTML, CSS, JavaScript, and Supabase.</p>
+      </section>
+
+      <section class="placeholder-card">
+        <h2>Home / Dashboard</h2>
+        <p>This page will contain the dashboard overview, summary cards, and quick access to the main system sections.</p>
+      </section>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Library Management System Project</p>
+      <p>Built for coursework collaboration and system integration.</p>
+    </div>
+  </footer>
 
   <script src="../js/app.js"></script>
 </body>
