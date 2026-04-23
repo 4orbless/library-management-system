@@ -142,4 +142,11 @@ The homepage dashboard is prepared to load summary values from the SQL schema us
 - keep service role keys out of the browser
 
 ## Current Status
-This repository currently contains the initial project structure, shared layout, accessible homepage, responsive styling, and placeholder files for future development.
+This repository currently contains:
+- the initial project folder structure
+- shared navigation and layout across pages
+- an accessible and responsive homepage dashboard
+- high contrast mode support
+- Supabase connection scaffolding
+- dashboard data-loading preparation based on the project SQL schema
+- team handoff notes for coordinated development

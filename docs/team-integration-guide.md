@@ -80,4 +80,4 @@ When adding forms or tables:
 - Pull latest changes before editing shared files
 
 ## Final reminder
-The current project already includes shared navigation, responsive layout, accessible structure, and dashboard preparation. Build on top of it instead of replacing the shared foundation.
+The current project already includes shared navigation, responsive layout, accessible structure, contrast mode support, and dashboard preparation. Build on top of it instead of replacing the shared foundation.
